@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="test">
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.js"></script>
+		<script src="main.js"></script>
+		<meta charset="utf-8">
+		<title>Test</title>
+	</head>
+<body ng-controller="main">
+	<h1>Account Nicknames</h1>
+	<list selected="selectedAccountIndex">
+		<list-item type="account" ng-repeat="item in accounts" item="item" selectable></list-item>
+	</list>
+	<input type="text" ng-model="account.nickname" />
+</body>
+</html>
